@@ -8,7 +8,6 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
-		
 		<style type="text/css">
 			#header{
 				height: 300px;
@@ -50,10 +49,23 @@
 							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 						</div>
 						<div class="offcanvas-body">
- 							 <center><img src="image/usericon.png" width="50px"></center><b>홍길동님</b><button type="button" class="btn-close" aria-label="Close"></button>
+							<div class="float-end">
+								<a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+						 		<a href="#"><i class="fa-solid fa-user"></i></a>
+						 		<a href="#"><i class="fa-solid fa-file-signature"></i></a>
+						 	</div>
+						 	<br>
+						 	<hr>
+ 							 <center>
+ 							 	<img src="image/usericon.png" width="50px"><br><span class="badge rounded-pill text-bg-primary">Admin</span>
+ 							 	<br><b>홍길동</b>
+ 							 </center>
  							 <hr>
- 							 <a href="#">로그인 <br></a>
- 							 <a href="#">회원가입</a>
+ 							 <ul>
+ 							 	<li>ABCD</li>
+ 							 	<li>EFGH</li>
+ 							 	<li>설정</li>
+ 							 </ul>
 						</div>
 					</div>
 				</form>	
@@ -66,9 +78,13 @@
 			<li class="nav-item">
 				<a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">코드관리</a>
-			</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">코드관리</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">1</a></li>
+				<li><a class="dropdown-item" href="#">2</a></li>
+			</ul>
+		</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">회원관리</a>
 			</li>
@@ -109,7 +125,7 @@
 			<table class="table table-bordered table-hover">
 				<thead class="table-dark">
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num" value="selectall" onclick="selectAll(this)"/></th>
 						<th scope="col">#</th>
 						<th scope="col">이름</th>
 						<th scope="col">아이디</th>
@@ -123,9 +139,9 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">1</th>
-						<td>강만식</td>
+						<td onClick="location.href=''"> <a href="#">강만식</td>
 						<td>mansik2</td>
 						<td>신입</td>
 						<td>남자</td>
@@ -135,7 +151,7 @@
 						<td>2022.07.14</td>
 					</tr>
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">2</th>
 						<td>김춘삼</td>
 						<td>chun3</td>
@@ -147,7 +163,7 @@
 						<td>2022.06.14</td>
 					</tr>
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">3</th>
 						<td>강춘미</td>
 						<td>chuuunme</td>
@@ -159,7 +175,7 @@
 						<td>2022.02.14</td>
 					</tr>
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">4</th>
 						<td>이현숙</td>
 						<td>hyunsook2</td>
@@ -171,7 +187,7 @@
 						<td>2022.05.29</td>
 					</tr>
 					<tr>
-						<th scope="col"><input type="checkbox"></th>
+						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">5</th>
 						<td>한석순</td>
 						<td>suksoon2</td>
@@ -191,16 +207,23 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="float-start">
-				<button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-ban"></i></button>
-				<button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-trash"></i></button>
-			</div>
-			<div class="float-end">
-				<button type="button" class="btn btn-success" style=" --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-file-excel"></i></button>
-				<button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-plus"></i></button>
+			<div class="d-flex mb-1">
+				<div class="p-1"><button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-ban"></i></button></div>
+				<div class="p-1"><button type="button" class="btn btn-danger" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-trash"></i></button></div>
+				<div class="p-1 ms-auto"><button type="button" class="btn btn-success" style=" --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-file-excel"></i></button></div>
+				<div class="p-1"><button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><i class="fa-solid fa-plus"></i></button></div>
 			</div>
 		</form>
 		<script src="https://kit.fontawesome.com/a1961b2393.js" crossorigin="anonymous"></script>
   		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  		
+  		<script type="text/javascript">
+			function selectAll(selectAll)  {
+				const checkboxes = document.getElementsByName('num');
+				checkboxes.forEach((checkbox) => {
+					checkbox.checked = selectAll.checked;
+				})
+			}
+  		</script>
 	</body>
 </html>
