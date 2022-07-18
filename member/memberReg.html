@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Bootstrap demo</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">  		<style type="text/css">
+			#header{
+				height: 50px;
+			} 
+			#header .logo { 
+				margin: auto;
+				width:75%;
+			}
+			.navbar-brand, h5 {
+				font-family: 'Dongle', sans-serif;
+				font-size : 40px;
+				width: 100px;
+			}
+			#content {
+				border: 1px solid #E0E0E0; 
+				border-top: 20; 
+				padding: 30px;
+				margin: auto;
+				width: 75%;
+			}
+		</style>
+  </head>
+  <body style="width:75%; margin: auto;">
+  	<form>
+	  	<nav class="navbar bg-White">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" style="font-size:50px;">BAE</a>
+				<form class="d-flex" role="search">
+					<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasRightLabel">BAE</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+						
+							<div class="float-end">
+								<a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+						 		<a href="#"><i class="fa-solid fa-user"></i></a>
+						 		<a href="#"><i class="fa-solid fa-file-signature"></i></a>
+						 	</div>
+						 	<br>
+						 	<hr>
+							 <center>
+							 	<img src="image/usericon.png" width="50px"><br><span class="badge rounded-pill text-bg-primary">Admin</span>
+							 	<br><b>홍길동</b>
+							 </center>
+							 <hr>
+							 <ul>
+							 	<li>ABCD</li>
+							 	<li>EFGH</li>
+							 	<li>설정</li>
+							 </ul>
+						</div>
+					</div>
+				</form>	
+			</div>
+		</nav>
+		<hr>
+		<div id="header"> <div class="logo"><h3>지원서</h3></div></div>
+		
+		<div id="content">
+			<center><img src="image/usericon.png" width="100px">
+			<div class="input-group mb-3 w-25">
+  				<input type="file" class="form-control" id="inputGroupFile01">
+			</div> </center>
+			<h5>·기본정보</h5>
+		<div class="container-fluid">
+				<div class="row row-cols-auto">
+					<div class="col">
+						<select class="form-select" style="width:120px;">
+			  				<option selected>지원분야</option>
+			  				<option value="1">개발부</option>
+			  				<option value="2">CS부</option>
+						</select>
+					</div>
+					<div class="col">
+						<select class="form-select" style="width:100px;">
+			  				<option selected>경력</option>
+			  				<option value="1">신입</option>
+			  				<option value="2">경력</option>
+						</select>
+					</div>
+					<div class="col">
+						<select class="form-select"style="width:100px;">
+			  				<option selected>성별</option>
+			  				<option value="1">신입</option>
+			  				<option value="2">경력</option>
+						</select>
+					</div>
+				</div>
+			<hr>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col">이름<input type="textbox" style="height:25px;width:150px;"></div>
+			</div>
+				<div class="row">
+					<div class="col">아이디 <input type="textbox" style="height:25px;width:150px;"></div>
+			</div>
+		</div>
+	</form>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  	</script>
+  	</body>
+</html>
