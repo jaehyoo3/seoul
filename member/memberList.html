@@ -11,14 +11,13 @@
 		<style type="text/css">
 			#header{
 				height: 300px;
-				margin: 0 auto;
 				background-image: url('./image/company.jpg');
 			} 
 	  		th, td {
 				text-align: center;
 			}
 			#header .logo { 
-				padding: 100px 0;
+				padding: 100px;
 				text-align: center;
 			}
 			.navbar-brand, h5 {
@@ -33,6 +32,7 @@
 			body {
 				width:75%;
 				margin: auto;
+				padding: 10px;
 			}
 		</style>
 	</head>
@@ -71,7 +71,7 @@
 				</div>
 			</nav>
 				<div id="header">
-		  		<div class="logo"><h1 style="color:white;">Member List</h1></div>
+		  			<div class="logo"><h1 style="color:white;">Member</h1></div>
 		  		</div><hr>
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
@@ -88,7 +88,7 @@
 					<a class="nav-link" href="#">회원관리</a>
 				</li>
 			</ul>
-		  	<div class="d-grid gap-3 w-50">
+		  	<div class="d-grid gap-3" style="width:60%;">
 				<div class="p-2 bg-light border">
 					<select name="" style="width:100px;">
 						<option value="0">선택
@@ -127,6 +127,7 @@
 						<th>#</th>
 						<th>이름</th>
 						<th>아이디</th>
+						<th>지원분야</th>
 						<th>경력</th>
 						<th>성별</th>
 						<th>생년월일</th>
@@ -141,6 +142,7 @@
 						<th scope="row">1</th>
 						<td>강만식</td>
 						<td>mansik2</td>
+						<td>개발</td>
 						<td>신입</td>
 						<td>남자</td>
 						<td>2001-08-16</td>
@@ -153,6 +155,7 @@
 						<th scope="row">2</th>
 						<td>김춘삼</td>
 						<td>chun3</td>
+						<td>CS</td>
 						<td>경력직</td>
 						<td>남자</td>
 						<td>2002-01-16</td>
@@ -165,6 +168,7 @@
 						<th scope="row">3</th>
 						<td>강춘미</td>
 						<td>chuuunme</td>
+						<td>CS</td>
 						<td>경력진</td>
 						<td>여자</td>
 						<td>1997-04-01</td>
@@ -177,6 +181,7 @@
 						<th scope="row">4</th>
 						<td>이현숙</td>
 						<td>hyunsook2</td>
+						<td>개발</td>
 						<td>신입</td>
 						<td>여자</td>
 						<td>1999-01-01</td>
@@ -189,12 +194,26 @@
 						<th scope="row">5</th>
 						<td>한석순</td>
 						<td>suksoon2</td>
+						<td>CS</td>
 						<td>신입</td>
 						<td>남자</td>
 						<td>2003-05-02</td>
 						<td>suuukk@good.com</td>
 						<td>010-4443-3444</td>
 						<td>2022.05.06</td>
+					</tr>
+					<tr>
+						<th scope="col"><input type="checkbox" name="num"></th>
+						<th scope="row">6</th>
+						<td>김주차</td>
+						<td>parking</td>
+						<td>개발</td>
+						<td>경력</td>
+						<td>여자</td>
+						<td>1979-06-02</td>
+						<td>parking_king@good.com</td>
+						<td>010-2223-4123</td>
+						<td>2019.01.08</td>
 					</tr>
 				</tbody>
 			</table>

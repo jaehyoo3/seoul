@@ -1,48 +1,59 @@
+
 <!doctype html>
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Bootstrap demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap demo</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">  		<style type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
+		<style type="text/css">
 			#header{
-				height: 50px;
-			} 
+					height: 300px;
+					background-image: url('./image/company.jpg');
+				} 
 			#header .logo { 
-				margin: auto;
-				width:75%;
-			}
+					padding: 100px;
+					text-align: center;
+				}
 			.navbar-brand, h5 {
 				font-family: 'Dongle', sans-serif;
-				font-size : 40px;
+				font-size: 40px;
 				width: 100px;
 			}
+			h1 {
+				font-family: 'Dongle', sans-serif;
+				font-size : 100px;
+			}
 			#content {
-				border: 1px solid #E0E0E0; 
-				border-top: 20; 
-				padding: 30px;
+				border: 1px solid #E0E0E0;
+				border-top: 20;
+				padding: 20px;
 				margin: auto;
 				width: 75%;
 			}
+			body {
+				width:75%;
+				margin: auto;
+				padding: 10px;
+			}
+	
 		</style>
-  </head>
-  <body style="width:75%; margin: auto;">
-  	<form>
-	  	<nav class="navbar bg-White">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#" style="font-size:50px;">BAE</a>
-				<form class="d-flex" role="search">
-					<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button>
-					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-						<div class="offcanvas-header">
+	</head>
+	<body>
+	 	<form>
+			<nav class="navbar bg-White">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">BAE</a>
+						<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button>
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+							<div class="offcanvas-header">
 							<h5 class="offcanvas-title" id="offcanvasRightLabel">BAE</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 						</div>
 						<div class="offcanvas-body">
-						
 							<div class="float-end">
 								<a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
 						 		<a href="#"><i class="fa-solid fa-user"></i></a>
@@ -62,54 +73,106 @@
 							 </ul>
 						</div>
 					</div>
-				</form>	
+				</div>
+			</nav>
+			<div id="header">
+				<div class="logo"><h1 style="color:white;">Member</h1></div>
 			</div>
-		</nav>
-		<hr>
-		<div id="header"> <div class="logo"><h3>지원서</h3></div></div>
-		
-		<div id="content">
-			<center><img src="image/usericon.png" width="100px">
-			<div class="input-group mb-3 w-25">
-  				<input type="file" class="form-control" id="inputGroupFile01">
-			</div> </center>
-			<h5>·기본정보</h5>
-		<div class="container-fluid">
-				<div class="row row-cols-auto">
-					<div class="col">
-						<select class="form-select" style="width:120px;">
-			  				<option selected>지원분야</option>
-			  				<option value="1">개발부</option>
-			  				<option value="2">CS부</option>
-						</select>
+			<hr>
+			<div id="content">
+				<h5>·기본정보</h5>
+				<center>
+					<img src="image/usericon.png" width="100px">
+					<div class="input-group mb-3 w-25">
+						<input type="file" class="form-control" id="inputGroupFile01">
 					</div>
-					<div class="col">
-						<select class="form-select" style="width:100px;">
-			  				<option selected>경력</option>
-			  				<option value="1">신입</option>
-			  				<option value="2">경력</option>
-						</select>
+				</center>
+				<div class="container-fluid">
+					<div class="row row-cols-auto">
+						<div class="col">
+							<select class="form-select" style="width: 120px;">
+								<option selected>지원분야</option>
+								<option value="1">개발</option>
+								<option value="2">CS</option>
+							</select>
+						</div>
+						<div class="col">
+							<select class="form-select" style="width: 100px;">
+								<option selected>경력</option>
+								<option value="1">신입</option>
+								<option value="2">경력</option>
+							</select>
+						</div>
 					</div>
-					<div class="col">
-						<select class="form-select"style="width:100px;">
-			  				<option selected>성별</option>
-			  				<option value="1">신입</option>
-			  				<option value="2">경력</option>
-						</select>
+					<hr>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2">
+							<label>성명</label>
+						</div>
+						<div class="col-md-2">
+							<input class="form-control" type="text" id="name" placeholder="성명" style="height: 25px;">
+						</div>
+					</div>
+					<div class="row" style="padding: 10px 0px;">
+						<div class="col-md-2">
+							<label>ID</label>
+						</div>
+						<div class="col-md-2">
+							<input class="form-control" type="text" id="i_d" placeholder="아이디" style="height: 25px;">
+						</div>
+					</div>
+					<div class="row" style="padding: 1px 0px;">
+						<div class="col-md-2">
+							<label>생년월일</label>
+						</div>
+						<div class="col-md-2">
+							<input class="form-control" type="date" style="height: 25px;">
+						</div>
+					</div>
+					<div class="row" style="padding: 10px 0px;">
+						<div class="col-md-2">
+							<label>이메일</label>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control" type="text" placeholder="abcd@co.kr"
+								style="height: 25px;">
+						</div>
+					</div>
+					<div class="row" style="padding: 1px 0px;">
+						<div class="col-md-2">
+							<label>전화번호</label>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control" type="text"
+								placeholder="010-XXXX-XXXX" style="height: 25px;">
+						</div>
+					</div>
+					<div class="row" style="padding: 10px 0px;">
+						<div class="col-md-2">
+							<label>성별</label>
+						</div>
+						<div class="col-md-5">
+							<div class="form-check">
+								<input class="form-check-input" name="gender" type="radio" id="man"checked>
+									<label>남자</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" name="gender" id="girl" type="radio">
+									<label>여자</label>
+							</div>
+						</div>
 					</div>
 				</div>
-			<hr>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col">이름<input type="textbox" style="height:25px;width:150px;"></div>
-			</div>
-				<div class="row">
-					<div class="col">아이디 <input type="textbox" style="height:25px;width:150px;"></div>
-			</div>
-		</div>
-	</form>
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  	</script>
-  	</body>
+			<br>
+			<center>
+				<button type="button" class="btn btn-secondary btn-lg">취소</button>
+				<button type="button" class="btn btn-success btn-lg">등록</button>
+			</center>
+		</form>
+		<script src="https://kit.fontawesome.com/a1961b2393.js" crossorigin="anonymous"></script>
+  		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	</body>
 </html>
