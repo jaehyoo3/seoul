@@ -137,7 +137,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr onClick="location.href='./memberMod.html'">
 						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">1</th>
 						<td>강만식</td>
@@ -189,31 +189,19 @@
 						<td>010-1111-7375</td>
 						<td>2022.05.29</td>
 					</tr>
-					<tr>
-						<th scope="col"><input type="checkbox" name="num"></th>
-						<th scope="row">5</th>
-						<td>한석순</td>
-						<td>suksoon2</td>
-						<td>CS</td>
-						<td>신입</td>
-						<td>남자</td>
-						<td>2003-05-02</td>
-						<td>suuukk@good.com</td>
-						<td>010-4443-3444</td>
-						<td>2022.05.06</td>
-					</tr>
 				</tbody>
 			</table>
-			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal fade" id="ban_del" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="staticBackdropLabel">제목부분</h5>
+							<h5 class="modal-title" id="staticBackdropLabel">삭제</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
-						<div class="modal-body">내용부분</div>
+						<div class="modal-body">삭제하시겠습니까 ?</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+							<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">닫기</button>
 							<button type="button" class="btn btn-primary">확인</button>
 						</div>
 					</div>
@@ -229,7 +217,7 @@
 				  </ul>
 			</nav>
 	       	<div class="d-flex mb-1">
-				<div class="p-1"><button type="button" class="btn btn-danger" "><i class="fa-solid fa-ban"></i></button></div>
+				<div class="p-1"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ban_del"><i class="fa-solid fa-ban"></i></button></div>
 				<div class="p-1"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></div>
 				<div class="p-1 ms-auto"><button type="button" class="btn btn-success"><i class="fa-solid fa-file-excel"></i></button></div>
 				<div class="p-1"><button type="button" class="btn btn-primary" onClick="location.href='./memberReg.html'"><i class="fa-solid fa-plus"></i></button></div>
