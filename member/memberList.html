@@ -137,7 +137,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr onClick="location.href='./memberMod.html'">
+					<tr onClick="location.href='./memberMod.html'" style="cursor:pointer;">
 						<th scope="col"><input type="checkbox" name="num"></th>
 						<th scope="row">1</th>
 						<td>강만식</td>
@@ -207,6 +207,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="ban_del2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="staticBackdropLabel">삭제</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">삭제하시겠습니까 ?</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">닫기</button>
+							<button type="button" class="btn btn-primary">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<nav aria-label="navigation">
 				<ul class="pagination pagination-sm justify-content-center">
 				    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
@@ -218,7 +234,7 @@
 			</nav>
 	       	<div class="d-flex mb-1">
 				<div class="p-1"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ban_del"><i class="fa-solid fa-ban"></i></button></div>
-				<div class="p-1"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></div>
+				<div class="p-1"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ban_del2"><i class="fa-solid fa-trash"></i></button></div>
 				<div class="p-1 ms-auto"><button type="button" class="btn btn-success"><i class="fa-solid fa-file-excel"></i></button></div>
 				<div class="p-1"><button type="button" class="btn btn-primary" onClick="location.href='./memberReg.html'"><i class="fa-solid fa-plus"></i></button></div>
 			</div>
