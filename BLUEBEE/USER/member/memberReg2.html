@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset='uTF-8'> 
+		<meta name ='viewport' content='width=device-width, initial-scaLe=1.0'>
+		<title>BLUEBEE</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		
+		<style type='text/css'>
+			#header {
+				height: 30px;
+				background-color: #f0f0f0;
+				width:100%;
+			    padding-left: 20px;
+			    padding-right: 20px;
+			} #header .menu {
+				width:95%;
+			    float: right;
+			    padding: 0;
+			    margin: 0;
+			}  #header .ul .b {
+				list-style-type: none; 
+				float: right;
+				padding: 3px 10px;
+				margin: auto 0;
+			} .navbar {
+			    height: 80px;
+			    padding-left: 50px;
+			    padding-right: 50px;
+			} .navbar #logo {
+			    line-height: 60px;
+			} .navbar img {
+			    vertical-align: top;
+			} .navbar #menu {
+			    float: right;
+			    list-style-type: none;
+			    padding: 0;
+			    margin: 0;
+			} .navbar #menu li {
+			    float: left;
+				line-height: 60px;
+				margin-left: 30px;
+			} .navbar #menu li a {
+			    color: #545454;
+			    font-size: 15px;
+			    text-decoration: none;
+			} #content {
+				width: 50%;
+				margin: auto;
+				margin-bottom: 20px;
+			} #footer {
+				background-color: black;
+				color: white;
+				clear: both;
+				height: 100px;
+				width: 100%;
+			} #footer .copyright {
+				text-align: center;
+				padding: 32px;
+			} .hr-sect {
+				display: flex;
+				flex-basis: 100%;
+				align-items: center;
+				color: rgba(0, 0, 0, 0.35);
+				font-size: 12px;
+				margin: 8px 0px;
+			} .hr-sect::before, .hr-sect::after {
+				content: "";
+				flex-grow: 1;
+				background: rgba(0, 0, 0, 0.35);
+				height: 1px;
+				font-size: 0px;
+				line-height: 0px;
+				margin: 0px 16px;	
+			} .box {
+				width: 150px;
+				height: 150px; 
+				border-radius: 70%;
+				overflow: hidden;
+			} .profile {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<div id='header'>
+				<div class='menu'>
+					<ul class='ul'>
+						<li class='b'><i class="fa-solid fa-magnifying-glass"></i></li>
+						<li class='b'><div class="vr"></li>
+						<li class='b'><i class="fa-solid fa-bag-shopping"></i></li>
+						<li class='b'><i class="fa-solid fa-user"></i></li>
+						<li class='b'><div class="vr"></li>
+						<li class='b'>고객센터</li>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar">
+		        <a href="#" id="logo">
+		            <img src="../img/logo2.png" height="60">
+		        </a>
+		        <ul id="menu">
+		            <li><a href="#"><b>New</b></a></li>
+		            <li><a href="#"><b>Best</b></a></li>
+		            <li><a href="#"><b>Outer</b></a></li>
+		            <li><a href="#"><b>Top</b></a></li>
+		            <li><a href="#"><b>Pants</b></a></li>
+		            <li><a href="#"><b><div class="vr"></b></a></li>
+		            <li><a href="#"><b><i class="fa-brands fa-instagram fa-xl"></i></b></a></li>
+		        </ul>
+	  		</div>
+			<div id='content'>
+				<h1>회원가입 정보입력</h1>
+				<div class="d-flex mb-1">
+					<div class="p-1 ms-auto">
+						<span style="color:rgb(44, 62, 80);">약관동의 > <b>회원가입 정보입력</b> > 가입완료</span>
+					</div>	
+				</div>
+				<hr>
+				<center>
+					<div class="box" style="background: #BDBDBD;">
+						<img class="profile" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+					</div>
+					<br>
+				</center>
+				<input type="text" class="form-control mb-2" id="userid" placeholder="아이디">
+				<input type="password" class="form-control mb-2" id="inputPassword" placeholder="비밀번호">
+				<input type="password" class="form-control mb-2" id="inputPassword" placeholder="비밀번호 확인">
+				<span>닉네임</span>
+				<input type="text" class="form-control mb-2" id="nickname" placeholder="닉네임">
+				<span>이름</span>
+				<input type="text" class="form-control mb-2" id="name" placeholder="이름">
+				<span>생년월일</span>
+				<div class="d-flex mb-1">
+					<div class="p-1">
+						<input type="number" class="form-control mb-2" id="usernumber" name="usernumber"min="1900" max="2022" value="2022" style="width:200px;">
+					</div>
+					<div class="p-1">
+						<input type="number" class="form-control mb-2" id="usernumber" name="usernumber"min="1" max="12" value="7" style="width:200px;">
+					</div>	
+					<div class="p-1">
+						<input type="number" class="form-control mb-2" id="usernumber" name="usernumber"min="1" max="31" value="26" style="width:200px;">
+					</div>	
+				</div>
+				<span>성별</span>
+				<div class="d-flex mb-1">
+					<div class="p-1">
+					<input class="form-check-input" name="gender" type="radio" id="man"checked>
+					<label for="man">남자</label>
+					</div>
+					<div class="p-1 mx-auto">
+					<input class="form-check-input" name="gender" id="girl" type="radio">
+					<label for="girl">여자</label>
+					</div>
+				</div>
+			</div>
+			<div id='footer'>
+				<div class='copyright'>© 2022. Bluebee all rights reserved.</div>
+			</div>
+
+		</form>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/a1961b2393.js" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
