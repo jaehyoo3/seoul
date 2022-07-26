@@ -46,9 +46,21 @@
 			    font-size: 15px;
 			    text-decoration: none;
 			} #content {
+				width: 100%;
+				height: 850px;
+				background-color: rgba(224, 224, 224, 0.3);
+			} #content .login {
 				width: 50%;
-				height: 800px;
-				margin: auto;
+				padding: 150px 0px 200px 300px;
+				float: left;
+			} #content .join {
+				width: 50%;
+				padding: 300px 200px 150px 100px;
+				float: left;
+			} #content .login a {
+				color: #545454;
+				font-size: 15px;
+				text-decoration: none;
 			} #footer {
 				background-color: black;
 				color: white;
@@ -62,8 +74,8 @@
 				display: flex;
 				flex-basis: 100%;
 				align-items: center;
-				color: rgba(0, 0, 0, 0.35);
-				font-size: 12px;
+				color: rgba(0, 0, 0);
+				font-size: 15px;
 				margin: 8px 0px;
 			} .hr-sect::before, .hr-sect::after {
 				content: "";
@@ -93,7 +105,7 @@
 			</div>
 			<div class="navbar">
 		        <a href="#" id="logo">
-		            <img src="../../img/logo2.png" height="60">
+		            <img src="../img/logo2.png" height="60">
 		        </a>
 		        <ul id="menu">
 		            <li><a href="#"><b>New</b></a></li>
@@ -106,33 +118,42 @@
 		        </ul>
 	  		</div>
 		<div id='content'>
-			<h1>이용약관</h1>
-			<span>앱톤멤버스는 앱톤의 온라인 멤버십 제도로 앱톤온라인스토어에서 앱톤이 제공하는 특별한 혜택을 경험하실 수 있습니다!</span>
-			<br><br><br>
-			<hr>
-			<br>
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-				<label class="form-check-label" for="flexCheckIndeterminate">
-					이용약관, 개인정보 수집 및 이용에 모두 동의합니다.
-				</label>
-			</div>
-			<div class="d-flex mb-1">
-				<div class="p-1">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" value="" id="ma1">
-						<label class="form-check-label" for="ma1">
-							이용약관 동의 (필수)
-						</label>
+			<div class='login'>
+				<h3><strong>로그인</strong></h3>
+				<span>가입하신 아이디로 로그인하세요.</span>
+				<br>
+				<hr>
+				<br>
+				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="아이디">
+				<input type="password" class="form-control" id="inputPassword" placeholder="비밀번호">
+				<div class="d-flex mb-1">
+					<div class="p-1">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+							<label class="form-check-label" for="flexCheckIndeterminate">
+								로그인상태유지
+							</label>
+						</div>
 					</div>
+					<div class="p-1 ms-auto"><span><a href="#">아이디·비밀번호 찾기</a></span></div>
 				</div>
-				<div class="p-1 ms-auto">
-					<span style="color:rgb(44, 62, 80);"><b>약관동의</b> > 회원가입 정보입력 > 가입완료</span>
-			</div>	
-		</div>
-		<div class="mb-3">
-  			<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"style="resize: none;">ddd</textarea>
-		</div>
+				<br>
+				<div class="d-grid gap-2">
+					<button type="button" class="btn text-white fw-bold" style="background-color:rgb(44, 62, 80);">로그인</button>
+				</div>
+				<br>
+				<div class="hr-sect"> 또는 </div>
+				<br>
+				<div class="d-grid gap-2 col-12">
+					<button class="btn text-white fw-bold" type="button" style="background-color:#2DB400;">네이버로 시작하기</button>
+					<button class="btn text-white fw-bold" type="button" style="background-color:#FEE500;">카카오로 시작하기</button>
+				</div>
+			</div>
+				<div class='join'>
+				<h3><strong>BLUE BEE 회원가입</strong></h3>
+				<span>BLUEBEE가 제공하는 많은 쇼핑 혜택들 누리 실 수 있습니다.</span><br>
+				<br><button type="button" class="btn text-white fw-bold" style="background-color:rgb(44, 62, 80);">가입하기</button>
+			</div>
 		</div>
 		<div id='footer'>
 			   	<div class='copyright'>© 2022. Bluebee all rights reserved.</div>
