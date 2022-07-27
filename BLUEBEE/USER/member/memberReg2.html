@@ -123,9 +123,11 @@
 				</div>
 				<hr>
 				<center>
+					<input type=file name='fileup1' accept='image/*' style='display: none;'>
 					<div class="box" style="background: #BDBDBD;">
-						<img class="profile" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+						<img class="profile" src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' name='find' id='find' border='0' onclick='document.all.fileup1.click(); document.all.fileup2.value=document.all.fileup1.value' style="cursor:pointer;">
 					</div>
+					<input type='text' name='file2' id='file2' style='display:none;'> 
 					<br>
 				</center>
 				<input type="text" class="form-control mb-2" id="userid" placeholder="아이디">
@@ -158,6 +160,52 @@
 					<label for="girl">여자</label>
 					</div>
 				</div>
+				<span>이메일</span>
+				<div class="row">
+					<div class="col">
+						<input type="text" class="form-control mb-2" id="userid" placeholder="이메일">
+					</div>
+					<div class="col">
+     					<select class="form-select">
+							<option selected>주소</option>
+							<option value="1">naver.com</option>
+							<option value="2">gmail.com</option>
+							<option value="3">daum.net</option>
+							<option value="4">기타</option>
+						</select>
+					</div>
+				<span>연락처</span
+				<div class="row">
+					<div class="col">
+						<select class="form-select">
+							<option value="1">010</option>
+							<option value="2">011</option>
+							<option value="3">012</option>
+							<option value="4">070</option>
+						</select>
+					</div>
+					<div class="col">
+							<input type="text" class="form-control mb-2">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control mb-2">
+					</div>
+				</div>
+				<span>주소</span>
+				<div class="d-flex mb-1">
+					<div class="p-1">
+					<input type="text" class="form-control mb-2">
+					</div>
+					<div class="p-1">
+						<button type="button" class="btn text-white fw-bold" style="background-color:rgb(44, 62, 80);">주소검색</button>
+					</div>
+				</div>
+				<input type="text" class="form-control mb-2">
+				<input type="text" class="form-control mb-5">
+				
+				<div class="d-grid gap-2 col-12">
+					<button type="button" class="btn text-white fw-bold" style="background-color:rgb(44, 62, 80);">가입하기</button>
+					</div>
 			</div>
 			<div id='footer'>
 				<div class='copyright'>© 2022. Bluebee all rights reserved.</div>
